@@ -13,8 +13,21 @@
         <h3> Popular News</h3>
          <ul>
             {% for general_sources in general %}
-                <li>{{ general_sources.name}}</li>
+                <li>{{ general_sources.general}}</li>
             {% endfor %}
+            <!-- Upcoming news -->
+        <h3>New News</h3>
+        <ul>
+           {% for business_sources in business %}
+               <li>{{ business_sources.business}}</li>
+           {% endfor %}
+       </ul>
+       <!-- Now showing movie -->
+       <h3>Now Showing</h3>
+        <ul>
+           {% for health_sources in health %}
+               <li>{{ health_sources.health}}</li>
+           {% endfor %}
         </ul>
  </body>
 </html>
