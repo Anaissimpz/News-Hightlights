@@ -7,27 +7,28 @@
         {% else %}
         <title> Welcome to the best News Review website </title>
         {% endif %}
+        {% import 'macros.html' as macro%}
     </head>
     <body>
         <!-- Popular movie section  -->
-        <h3> Popular News</h3>
+        <h3> General News</h3>
          <ul>
-            {% for general_sources in general %}
-                <li>{{ general_sources.general}}</li>
-            {% endfor %}
+                {{ macro.displaySourceList(general)}}
             <!-- Upcoming news -->
-        <h3>New News</h3>
+        <h3>Business News</h3>
         <ul>
-           {% for business_sources in business %}
-               <li>{{ business_sources.business}}</li>
-           {% endfor %}
+                {{ macro.displaySourceList(business)}}
        </ul>
        <!-- Now showing movie -->
-       <h3>Now Showing</h3>
+       <h3>Sports News</h3>
         <ul>
-           {% for health_sources in health %}
-               <li>{{ health_sources.health}}</li>
-           {% endfor %}
+                {{ macro.displaySourceList(sports)}}
         </ul>
+        <h3>Health News</h3>
+        <ul>
+                {{ macro.displayMovieList(health)}}
+        </ul>
+     
+     
  </body>
 </html>
