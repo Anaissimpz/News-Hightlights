@@ -25,7 +25,7 @@ News Highlight is a web application that is meant to catch up hard workers on cu
 * Bootstrap
 * JavaScript
 # Link
-click on this link:
+click on this link: https://news-high.herokuapp.com/
 # contact details
 * Tel:+250783711066
 * Email: anaissimpenzwe@gmail.com
