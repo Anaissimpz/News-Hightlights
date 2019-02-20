@@ -1,0 +1,25 @@
+
+{% extends 'base.html'%}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<!-- Content block -->
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for popular_article in articles %}
+        <div class="col-xs-6-col-sm-md-6 col-lg-6">
+            <img src="{{popular_article.urlToImage}}" width="250" height="250" class="img-responsive" >
+            <p class="overview">Published by {{popular_article.author }}</p>
+        </div> 
+        <div class="col-xs-6-col-sm-md-6 col-lg-6">
+            <div class="well">
+                <p class="ratings"> <b> {{popular_article.description }}</b></p>
+                <p><i>Published On:{{ popular_article.publishedAt}} </i></p>
+                <a href="{{popular_article.url}}">Read more</a>
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div> 
+</div>
+
+{% endblock%}
