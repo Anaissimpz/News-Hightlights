@@ -1,9 +1,9 @@
 # News Highlight
-# By Anais  Simpenzwe
-# Description
+## By Anais  Simpenzwe
+## Description
 News Highlight is a web application that is meant to catch up hard workers on current affairs happening all over the world. The website has the home page, that has a list of all sources of news sorted in categories.
-# BDD
-| Behavior |Input | Output |
+## BDD
+| Behavior |Output |
 | :---:   | :-: | :-:      |
 | View General sources | Scroll through the  GENERAL News section to see general news |
 |         |     |          |
@@ -18,6 +18,7 @@ News Highlight is a web application that is meant to catch up hard workers on cu
 * Install python 3.6
 * Run chmod a+x run.py
 * Run ./run.py
+
 # Technologies used
 * Python 3.6
 * HTML
